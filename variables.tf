@@ -1,8 +1,8 @@
 variable "client_id" {
-    value = "18776339-0821-4021-b50b-2939218afc2c"
+    type = string
 }
 variable "client_secret" {
-    value = "V3HR4BXTj5Q_q9YoDq3wU7dqTyKGHGMAV2"
+    type = string
 
 }
 
