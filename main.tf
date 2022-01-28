@@ -7,8 +7,24 @@ terraform {
   }
 }
 provider "azurerm" {
+    version         =   "~> 2.0"
+    client_id       =   var.client_id
+    client_secret   =   var.client_secret
+    subscription_id =   var.subscription_id
+    tenant_id       =   var.tenant_id
+
+
   features {}
 }
+
+provider "azuread" {
+    version         =   ">= 0.11"
+    client_id       =   var.client_id
+    client_secret   =   var.client_secret
+    tenant_id       =   var.tenant_id
+    alias           =   "ad"
+}
+
 resource "azurerm_resource_group" "k8s" {
     name     = var.resource_group_name
     location = var.location
