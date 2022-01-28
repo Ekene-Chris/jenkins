@@ -8,10 +8,10 @@ terraform {
 }
 provider "azurerm" {
     version         =   "~> 2.0"
-    client_id       =   "18776339-0821-4021-b50b-2939218afc2c"
-    client_secret   =   "V3HR4BXTj5Q_q9YoDq3wU7dqTyKGHGMAV2"
-    subscription_id =   "5d54fbf4-30b2-40fa-b790-c12342cbd46a"
-    tenant_id       =  "9c4e509a-5b8a-4474-a3f2-6ef4617ff3cd"
+    client_id       =   var.client_id
+    client_secret   =   var.client_secret
+    subscription_id =   var.subscription_id
+    tenant_id       =   var.tenant_id
 
 
   features {}
@@ -19,9 +19,9 @@ provider "azurerm" {
 
 provider "azuread" {
     version         =   ">= 0.11"
-    client_id       =   "18776339-0821-4021-b50b-2939218afc2c"
-    client_secret   =   "V3HR4BXTj5Q_q9YoDq3wU7dqTyKGHGMAV2"
-    tenant_id       =   "9c4e509a-5b8a-4474-a3f2-6ef4617ff3cd"
+    client_id       =   var.client_id
+    client_secret   =   var.client_secret
+    tenant_id       =   var.tenant_id
     alias           =   "ad"
 }
 
