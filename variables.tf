@@ -1,20 +1,3 @@
-variable "client_id" {
-    type = string
-}
-variable "client_secret" {
-    type = string
-
-}
-
-variable "subscription_id" {
-    description =   "Subscription ID"
-    type        =   string
-}
-
-variable "tenant_id" {
-    description =   "Tenant ID"
-    type        =   string
-}
 
 variable "agent_count" {
     default = 3
