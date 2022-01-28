@@ -1,2 +1,2 @@
-# jenkins
-Repo where i integrate with jenkins pipeline
+# tf-cicd
+Automating Terraform deployments on Azure using Jenkins
